@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login check</title>
+</head>
+<body>
+    <script>
+        var id = "gunny";
+        var pw = "1234";
+
+        var user_id = prompt("ID?","");
+        var user_pw = prompt("PW?","");
+
+        if(id ==user_id){
+            if(pw ==user_pw){
+                document.write(user_id+"Welcome!");
+            }else{
+                alert("Not matched your PW");
+                location.reload();
+            }
+        }else{
+            alert("Id is not match");
+            location.reload();
+        }
+
+
+    </script>
+</body>
+</html>
