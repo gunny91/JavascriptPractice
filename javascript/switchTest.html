@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>switch Test</title>
+</head>
+<body>
+    <script>
+        var site = prompt("Naver, Daum, Natem Google");
+        var url;
+
+        switch(site){
+            case "Google": url="www.google.com";
+            break;
+            case "Daum": url="www.daum.net";
+            break;
+            case "Naver": url="www.naver.com";
+            break;
+            case "Nate": url="www.nate.com";
+            break;
+            default:alert("There is no web site we can find");
+        }
+
+        if(url) location.href="http://"+url;
+    </script>
+</body>
+</html>
