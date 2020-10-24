@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chankenpo</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>COmputer game for Chankenpo</h1>")
+
+        var game= prompt("Select one","paper");
+
+        var gameCount;
+
+        switch(game) {
+            case "c":
+                gameCount = 1;
+                break;
+            case "rock":
+                gameCount = 2;
+                break;
+            case paper:
+                gameCount = 3;
+                break;
+            default:
+                alert("Put the wrong value");
+                location.reload();
+        }
+
+        var com=Math.ceil(Math.random()*3);
+        document.write("<img src =\images/math_img_"+com+".jpg\">");
+
+        if(gameCount ==com)
+        {
+           document.write("<img src=\images/game_1.jpg\">");
+        }else{document.write("<img src=\images/game_2.jpg\">")}
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        var temp = new Array(1,2,3,4,"Gunny","ISU");
+
+        var ex = new Array();
+        ex[0]= 1;
+        var d = [1,2,3,4,5];
+
+        document.write("<h3>Array 1</h3>");
+
+        document.write(temp[0],"<br>");
+        document.write(temp[1],"<br>");
+        document.write(temp[2],"<br>");
+        document.write(temp[3],"<br>");
+
+        document.write("<h3>Array 2</h3>");
+        for(var i = 0 ; i<temp.length;i++){
+            document.write(temp[i],"<br>");
+        }
+
+        document.write("<h3>Array 3</h3>");
+        for(i in temp){
+            document.write(temp[i],"<br>");
+        }
+
+        var arr = ["Iowa", "Ames", "Des Moins","ISU"};
+        var arr2 = ["Siox City", "Hochimin", "New York"];
+
+        var result = arr.join("-");
+        console.log(result);
+
+    </script>
+</body>
+</html>
