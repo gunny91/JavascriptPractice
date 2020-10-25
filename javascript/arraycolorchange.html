@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Array Color Change</title>
+</head>
+<body>
+    <script>
+        var color = ["white", "yello","aqua","purple"];
+
+        var i = 0;
+
+        function colorChange(){
+            i++;
+            if(i >= color.length){
+                i =0;
+            }
+
+            var bodyTag = document.getElementById("theBody");
+            bodyTag.style.backgroundColor = color[i];
+
+
+        }
+
+    </script>
+
+    <body id="theBody">
+
+    <div class="container">
+        <button onclick="colorChange()">Change background color</button>
+    </div>
+    </body>
+</body>
+</html>
